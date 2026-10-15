@@ -1,5 +1,7 @@
 # Instalar el MCP de Cubase desde cero
 
+[English](installation.md) · **Español**
+
 Esta guía parte de un Mac sin nada instalado y termina con Claude controlando Cubase 13. Está probada con Cubase Pro 13.0.55 en español.
 
 Calcula unos 20 minutos.
@@ -256,9 +258,9 @@ Pide a Claude, en este orden:
 | `cubase_status` no responde nunca | La superficie MCP CubaseBridge no está activa en la pestaña MIDI Remote, o los buses IAC no existen o tienen otro nombre. Compruébalo con `cubase_list_midi_ports`. |
 | `osascript no tiene permiso para enviar pulsaciones de teclas` | Falta el permiso de Accesibilidad del paso 7. |
 | Claude Code deniega `ui_click_menu`, `ui_key` o lecturas en modo automático | Faltan las reglas de permisos de "Permisos de Claude Code" (paso 6). No repitas la llamada por otra vía. |
-| `Error opening input ... Invalid data` en análisis | Hay un WAV vacío o roto en la carpeta. Esta rama ya lo salta. |
+| `Error opening input ... Invalid data` en análisis | Hay un WAV vacío o roto en la carpeta. El análisis salta esos archivos y los lista. |
 | Batería o guitarras en silencio | Faltan plugins (Superior Drummer, amplificadores...). Instálalos o sustitúyelos antes de mezclar. |
 | La respuesta de `cubase_list_channels` es enorme | Ya no debería: devuelve valores compactos y solo los envíos con destino. Pide menos campos con `fields`, pagina con `offset`/`limit`, usa `includeValues: false` o consulta canal a canal con `cubase_get_channel`. |
 | Al seleccionar una pista se arma la grabación y aparecen WAV de 0 bytes en `Audio/` | Es una preferencia de Cubase: Preferencias > Edición > Proyecto y MixConsole > "Activar grabación en la pista seleccionada". Cada vez que arma una pista, Cubase crea el archivo de la toma. Desactívala para mezclar y borra esos archivos con Archivo > Limpiar. Las herramientas que seleccionan lo indican en `sideEffects` (`armedBySelection`) y aceptan `disarm: true` y `restoreSelection: true`; el servidor no borra archivos. |
 
-Las limitaciones conocidas están en el [README](../README.md#límites-de-cubase-13-importante).
+Las limitaciones conocidas están en el [README](../README.es.md#límites-de-cubase-13-importante).

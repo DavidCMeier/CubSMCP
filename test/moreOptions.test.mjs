@@ -253,8 +253,8 @@ test('the catalog binds the Media browsers, Shuttle, selection playback and mark
     catalog.filter((c) => /^(Score|ADM|HeadTracking|VRPlayer|Game Audio|MediaInspector)/.test(c.category)),
     [],
   );
-  const readme = readFileSync(join(root, 'README.md'), 'utf8');
-  assert.match(readme, new RegExp(`${catalog.length} comandos`));
+  assert.match(readFileSync(join(root, 'README.md'), 'utf8'), new RegExp(`${catalog.length} key commands`));
+  assert.match(readFileSync(join(root, 'README.es.md'), 'utf8'), new RegExp(`${catalog.length} comandos`));
 });
 
 test('cubase_get_plugin_parameters gives only some fields or the titles; cubase_get_channel_strip gives only some sections', async () => {
