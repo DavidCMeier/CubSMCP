@@ -1,0 +1,32 @@
+{
+  "name": "cubase-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that controls Steinberg Cubase 13 through a MIDI Remote bridge script, with audio analysis helpers for automated mixing.",
+  "type": "module",
+  "bin": {
+    "cubase-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build:script": "node scripts/build-cubase-script.mjs",
+    "install:script": "node scripts/build-cubase-script.mjs --install",
+    "build": "npm run build:script && tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "extract:commands": "node scripts/extract-command-names.mjs",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@julusian/midi": "^3.6.1",
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "acorn": "^8.14.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT"
+}

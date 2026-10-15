@@ -1,0 +1,15 @@
+# User commands: Macros and Logical Editor presets you create in Cubase.
+# Category headers are written as [Category]; lines starting with # are comments.
+# Macros and Logical Editor presets use their own names, as shown in Edit > Key Commands.
+# For built-in commands use the internal name from commands/cubase13-internal-names.json; an on-screen label is translated when it is unambiguous.
+# Rebuild the Cubase script after editing (npm run build:script) and reload scripts in Cubase.
+#
+# Examples (remove the leading "# " to enable them):
+#
+# [Macro]
+# MCP Prepare Mix Session
+# MCP Gain Stage Selected
+#
+# [Process Project Logical Editor]
+# MCP - Select Drum Tracks
+# MCP - Color Vocals

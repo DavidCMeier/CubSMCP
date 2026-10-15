@@ -1,0 +1,728 @@
+# Cubase 13 key command catalog: the commands the bridge script binds.
+# Category headers are written as [Category]; lines starting with # are comments.
+# Names are Cubase internal names (the snippet of each entry in the MIDI Remote README "List of Commands"),
+# not the labels shown on screen: page.makeCommandBinding ignores a label without any error.
+# The on-screen labels come from commands/cubase13-internal-names.json (npm run extract:commands) and work as aliases.
+# Score, ADM, head tracking, VR player, game audio and MediaBay inspector categories are omitted on purpose; of Media only
+# the browsers, the preview and the insert commands are bound. cubase_list_commands with includeUnbound lists the rest.
+# Add your own macros / Logical Editor presets in commands/user-commands.txt using the same format.
+
+[AddTrack]
+Arranger
+Audio
+Audio Mono
+Chord
+FX Channel
+Folder
+Group Channel
+Instrument
+Marker
+MIDI
+Ruler
+Sampler
+Signature
+Tempo
+TransposeTrack
+From Track Presets
+VCA Fader
+Video
+
+[Analyze]
+Spectrum Analyzer
+Statistics
+
+[Arranger]
+Activate
+First Chain Step
+First Repeat
+Last Chain Step
+Last Repeat
+Next Chain Step
+Previous Chain Step
+
+[Audio]
+Adjust Fades to Range
+Apply Standard Fade In
+Apply Standard Fade Out
+Auto-Grid
+Bounce
+Close Gaps (Crossfade)
+Close Gaps
+Constrain Delay Compensation
+Copy Warp Markers from Selected Event
+Create Sampler Track
+Crossfade
+Decrement Event Volume
+Decrement Fade In Length
+Decrement Fade Out Length
+Delete Overlaps
+Detect Silence
+Disable/Enable Track
+Dissolve Part
+Event or Range as Region
+Events from Regions
+To Origin
+Events to Part
+Fade In to Cursor
+Fade In to Range Start
+Fade Out to Cursor
+Fade Out from Range End
+Find Selected in Pool
+Generate Harmony Voices
+Increment Event Volume
+Increment Fade In Length
+Increment Fade Out Length
+Invert Phase On/Off
+Make Extension from Selected Events Permanent
+Minimize File
+Convert Tracks: Mono to Multi-Channel
+Convert Tracks: Multi-Channel to Mono
+Open Fade Editors
+Paste Warp Markers to Selected Events
+Remove Extension from Selected Events
+Remove Fade In
+Remove Fade Out
+Remove Fades
+Remove Volume Curve
+Set Definition From Tempo
+Set Tempo From Event
+Snap Point to Cursor
+Stretch to Project Tempo
+Update Origin
+
+[Audio Alignment]
+Add Selection as Alignment Reference
+Add Selection as Alignment Target
+Align Audio
+Open Audio Alignment Panel
+Remove Alignment Reference
+Remove All Alignment Targets
+
+[Audio Export]
+Increase Counter Start Value
+Perform Audio Export
+Reset Counter Start Value
+Sync Channel Selection with Mixer
+
+[Audio Performance]
+Reset Processing Overload Indicator
+
+[Audio Realtime Processing]
+Create Warp Tabs from Hitpoints
+Flatten Realtime Processing
+Unstretch Audio
+
+[Automation]
+Automation Mode - Auto-Latch
+Automation Mode - Cross-Over
+Automation Mode - Touch
+Automation Mode - Trim
+Open Panel
+Delete All Automation in Project
+Delete Automation in Range
+Delete Automation of Selected Tracks
+Fill Gaps
+Fill Gaps on Selected Tracks
+Fill Gaps with Current Value (Selected Tracks)
+Fill Loop
+Fill To End
+Fill To Punch
+Fill To Start
+Freeze All Trim Automation in Project
+Freeze Trim Automation of Selected Tracks
+Hide All Automation
+Hide Automation
+Next Automation Mode
+Punch Out of Latch Automation
+Toggle Read Enable All Tracks
+Toggle Read Enable Selected Tracks
+Show All - Used Only
+Show All EQ Automation
+Show All Insert Automation
+Show All Pan Automation
+Show All Send Automation
+Show All Used Automation
+Show All Volume Automation
+Show Automation
+Show Used Automation (Selected Tracks)
+Suspend Reading All
+Suspend Reading Dynamics
+Suspend Reading EQ
+Suspend Reading Inserts
+Suspend Reading Mute
+Suspend Reading Others
+Suspend Reading Pan
+Suspend Reading Sends
+Suspend Reading Volume
+Suspend Reading/Writing All
+Suspend Writing All
+Suspend Writing Dynamics
+Suspend Writing EQ
+Suspend Writing Inserts
+Suspend Writing Mute
+Suspend Writing Others
+Suspend Writing Pan
+Suspend Writing Sends
+Suspend Writing Volume
+Use Virgin Territories
+Toggle Write Enable All Tracks
+Toggle Write Enable Selected Tracks
+
+[Channel & Track Visibility]
+HideMuted
+HideSelected
+channelOrganizerRedo
+ShowAll
+ShowConnected
+ShowUsed
+ShowPlaying
+ShowCycle
+ShowSelected
+ShowMarked
+channelOrganizerUndo
+Create Track Visibility Configuration
+Sync Visibility of Project and MixConsole: On/Off
+Update Track Visibility Configuration
+Channel and Rack Configuration 1
+Channel and Rack Configuration 2
+Channel and Rack Configuration 3
+Channel and Rack Configuration 4
+Channel and Rack Configuration 5
+Channel and Rack Configuration 6
+Channel and Rack Configuration 7
+Channel and Rack Configuration 8
+
+[Channel Settings]
+Show/Hide Direct Routing
+Show/Hide Output Chain
+
+[Control Room]
+Switch: AFL/PFL
+Switch: Click Active
+Switch: Activate Speakers
+Switch: Activate Studio 1
+Switch: Activate Studio 2
+Switch: Activate Studio 3
+Switch: Activate Studio 4
+Switch: Listen Cancel
+Switch: Dim Active
+Switch: Activate Phones
+Switch: Reference Level Active
+Switch: Source Select
+Switch: Speakers Select 1
+Switch: Speakers Select 2
+Switch: Speakers Select 3
+Switch: Speakers Select 4
+Switch: Speakers Select
+Switch: Talkback Active
+
+[Devices]
+VST Connections
+VST Performance
+Control Room Mixer
+MIDI Remote Manager
+Mixer
+Mixer 2
+Mixer 3
+Mixer 4
+MixConsole Lower Zone
+Setup
+Time Display
+VST Instruments
+Plug-in Manager
+
+[Direct Offline Processing]
+Apply
+Bypass Selected Process
+Direct Offline Processing
+Discard
+Favorite 1
+Favorite 2
+Favorite 3
+Favorite 4
+Favorite 5
+Favorite 6
+Favorite 7
+Favorite 8
+Favorite 9
+Make All Permanent
+Toggle Auto Apply
+
+[Edit]
+Activate/Deactivate
+Select All
+Select All on Tracks
+Autoscroll
+Clean Up Lanes
+Copy
+Create Tracks from Lanes
+Crop Range
+Cut
+Cut Time
+Unmute All
+Deactivate All Solo
+Delete
+Delete Time
+Duplicate
+Edit Channel Settings
+Edit VST Instrument
+Select Events under Cursor
+Find Track/Channel
+Select from Cursor to End
+Select from Start to Cursor
+Glue
+Group
+Toggle Group Tracks
+History
+Select in Loop
+Insert Silence
+Invert Selection
+Flip/Invert
+Lock/Unlock Track
+Mute
+Mute Events
+Mute/Unmute Objects
+Select None
+Open
+Paste
+Paste at Origin
+Paste Time
+Primary Parameter: Decrease
+Primary Parameter: Fine Decrease
+Primary Parameter: Fine Increase
+Primary Parameter: Increase
+Record Enable
+Redo
+Rename First Selected Track
+Rename Selected Events
+Repeat
+Secondary Parameter: Decrease
+Secondary Parameter: Fine Decrease
+Secondary Parameter: Fine Increase
+Secondary Parameter: Increase
+Select Event
+Lane Display Type
+Snap On/Off
+Solo
+Split at Cursor
+Split Loop
+Undo
+Ungroup
+Unmute Events
+Snap On
+Snap Off
+Grid Type: Bar
+Grid Type: Beat
+Left Selection Side to Cursor
+Right Selection Side to Cursor
+Range to Next Event
+Range to Previous Event
+
+[Editors]
+Open Audio Part Editor
+Open Drum Editor
+Open Key Editor
+Open List Editor
+Open Sample Editor
+Open/Close Editor
+
+[Export]
+AAF
+
+[File]
+Export Audio Mixdown
+Back up Project
+Close
+Export MIDI File
+Import MIDI File
+New
+New Empty
+Open
+Revert
+Save
+Save As
+Save as Template
+Save New Version
+Export Selected Tracks
+Import Track Archive
+Import Tracks from Project
+
+[Hitpoints]
+Calculate
+Create Audio Slices from Hitpoints
+Create Markers from Hitpoints
+Divide Audio Events at Hitpoints
+Remove Hitpoints
+
+[Import]
+AAF
+
+[Inspector]
+Toggle EQs Section
+Toggle Channel Section
+Toggle Inserts Section
+Toggle Filters Section
+Toggle Quick Controls Section
+Toggle Routing Section
+Toggle Sends Section
+Toggle Strip Section
+
+[Marker]
+Add Cycle Marker on Selected Track
+Add Position Marker on Selected Track
+Insert Marker
+Insert Cycle Marker
+Add and Edit Position Marker
+Add and Edit Cycle Marker
+Add and Edit Position Marker on Selected Track
+Add and Edit Cycle Marker on Selected Track
+Activate Marker Track
+
+[Media]
+Open MediaBay
+Open Loop Browser
+Open Sound Browser
+Search MediaBay
+Preview Start
+Preview Stop
+Insert into Project at Cursor
+Insert into Project at Left Locator
+Insert into Project at Origin
+
+[MIDI]
+Bounce
+Dissolve Part
+Freeze Track Params
+Legato
+Send All Notes Off Message
+
+[MIDI Remote]
+Open MIDI Remote Mapping Assistant
+Scripting Tools: Open Console
+Scripting Tools: Open ReadMe
+Scripting Tools: Open Script Folder
+Scripting Tools: Reload Scripts
+
+[MixConsole History]
+Redo MixConsole Step
+Undo MixConsole Step
+
+[MixConsole Snapshots]
+Save MixConsole Snapshot
+
+[Mixer]
+Arm All Audio Tracks
+Add Track To Selected: FX Channel
+Add Track To Selected: Group Channel
+Add Track To Selected: VCA Fader
+Bypass: Channel Strip
+Bypass: Channel Strip on Main Mix
+Bypass: EQs
+Bypass: EQs on Main Mix
+Bypass: Inserts
+Bypass: Inserts on Main Mix
+Bypass: Sends
+Disarm All Audio Tracks
+Direct Routing: Summing Mode On/Off
+Settings: Open/Close Selected
+File: Load Selected Channels
+File: Save Selected Channels
+Hide: Audio
+Hide: Groups
+Hide: Inputs
+Hide: Instruments
+Hide: MIDI
+Hide: Outputs
+Hide: Returns
+Hide: VCAs
+Link Channels
+Channels: Listen On/Off
+Loudness: Enable
+Loudness: Reset
+Loudness: Switch between +9dB and +18dB Scale
+Loudness: Switch between LU and LUFS
+Master Meter: AES17 (+3dB)
+Meters: Hold Forever
+Meters: Hold Peaks
+Meters: Input
+Meters: Post Fader
+Meters: Post Panner
+Meters: Reset
+Pre/Post
+Q-Link
+Hide: Reveal All
+Show/Hide Meter Bridge
+Unlink Channels
+Views: Channel Strip
+Views: EQs
+Views: Inserts
+Views: Sends
+Windows: Close All Plug-Ins
+Expand: Channel Strip
+Expand: Inserts
+Expand: Sends
+Expand: EQs
+Expand: Filters/Gain
+Expand: Routing
+Expand: Quick Controls
+Views: Filters/Gain
+Views: Routing
+Views: Quick Controls
+Views: VCA
+Show/Hide Equalizer Curve
+Show/Hide Channel Name
+Show/Hide Channel Overview
+Zoom In
+Zoom Out
+Panner: Open/Close Selected
+
+[Navigate]
+Bottom
+Down
+Left
+Right
+Focus Previous Plug-in
+Focus Next Plug-in
+Toggle Selection
+Top
+Up
+Back
+Fore
+
+[Preset]
+Next
+Previous
+Track Preset: Next
+Track Preset: Open Browser
+Track Preset: Previous
+
+[Process]
+Envelope
+Fade In
+Fade Out
+Gain
+Invert Phase
+Normalize
+Pitch Shift
+Remove DC Offset
+Resample
+Reverse
+Silence
+Stereo Flip
+Time Stretch
+
+[Project]
+Auto Fades Settings
+Set Track/Event Color
+Divide Track List
+Duplicate Tracks
+Folding: Toggle Tracks
+Folding: Fold Tracks
+Open Markers
+Folding: Tracks To Folder
+Notepad
+Open Pool
+Setup
+Remove Empty Tracks
+Remove Selected Tracks
+Select Track: Add Next
+Select Track: Add Prev
+Select Track: Next
+Select Track: Prev
+Tap Tempo
+Tempo Detection
+Open Tempo Track
+Folding: Toggle Selected Track
+Folding: Unfold Tracks
+
+[Quantize Category]
+Quantize
+
+[Render in Place]
+Render
+Render Setup...
+
+[Sample Editor]
+VariAudio - Quantize Pitch
+VariAudio - Reset Pitch + Warp Changes
+
+[Tool]
+Draw Tool
+Delete Tool
+Glue Tool
+Mute Tool
+Select Tool
+Range Tool
+Split Tool
+Zoom Tool
+
+[TrackVersions]
+Duplicate Version
+New Version
+Next Version
+Previous Version
+
+[Transport]
+Metronome On
+Auto Punch In
+Auto Punch Out
+Cycle
+Fast Forward
+Fast Rewind
+Forward
+To Left Locator
+Goto End
+Return to Zero
+To Right Locator
+Locate Next Event
+Locate Next Marker
+Locate Previous Event
+Locate Previous Marker
+Locate Selection End
+Locate Selection
+Loop Selection
+Step Bar
+Step Back Bar
+Nudge Cursor +5 Seconds
+Nudge Cursor +10 Seconds
+Nudge Cursor +20 Seconds
+Nudge Cursor -5 Seconds
+Nudge Cursor -10 Seconds
+Nudge Cursor -20 Seconds
+Play Selection Range
+Play until Next Marker
+Record
+Return to Start Position
+Rewind
+Set Left Locator
+Locators to Selection
+Set Right Locator
+Start
+StartStop
+Stop
+To Cycle Marker 1
+To Cycle Marker 2
+To Cycle Marker 3
+To Cycle Marker 4
+To Cycle Marker 5
+To Cycle Marker 6
+To Cycle Marker 7
+To Cycle Marker 8
+To Cycle Marker 9
+Recall Cycle Marker 1
+Recall Cycle Marker 2
+Recall Cycle Marker 3
+Recall Cycle Marker 4
+Recall Cycle Marker 5
+Recall Cycle Marker 6
+Recall Cycle Marker 7
+Recall Cycle Marker 8
+Recall Cycle Marker 9
+To Marker 1
+To Marker 2
+To Marker 3
+To Marker 4
+To Marker 5
+To Marker 6
+To Marker 7
+To Marker 8
+To Marker 9
+Use Pre-/Post-Roll
+Play from Selection Start
+Play from Selection End
+Play until Selection Start
+Play until Selection End
+Pre-roll to Selection Start
+Pre-roll to Selection End
+Post-roll from Selection Start
+Post-roll from Selection End
+Exchange Locator Positions
+To Punch In Position
+To Punch Out Position
+Set Punch In Position
+Set Punch Out Position
+Set Punch Points To Selection
+Sync Punch To Cycle
+Nudge Cursor Left
+Nudge Cursor Right
+Nudge +1 Frame
+Nudge -1 Frame
+Locate Next Hitpoint
+Locate Previous Hitpoint
+Restart
+Activate Return to Start Position
+Toggle: Cycle follows when locating to Markers
+Use Pre-roll
+Use Post-roll
+Precount On
+Lock Record
+Unlock Record
+Jog Left
+Jog Right
+Shuttle Play 1x
+Shuttle Play 2x
+Shuttle Play 4x
+Shuttle Play 8x
+Shuttle Play 1/2x
+Shuttle Play 1/4x
+Shuttle Play 1/8x
+Shuttle Play Reverse 1x
+Shuttle Play Reverse 2x
+Shuttle Play Reverse 4x
+Shuttle Play Reverse 8x
+Shuttle Play Reverse 1/2x
+Shuttle Play Reverse 1/4x
+Shuttle Play Reverse 1/8x
+Set Marker 1
+Set Marker 2
+Set Marker 3
+Set Marker 4
+Set Marker 5
+Set Marker 6
+Set Marker 7
+Set Marker 8
+Set Marker 9
+
+[Window Zones]
+Show/Hide Left Zone
+Show/Hide Lower Zone
+Show/Hide Right Zone
+
+[Windows]
+Close All Plug-in Windows
+Show/Hide Plug-ins
+Restore All
+Minimize All
+Select Next Plug-in Window
+
+[Workspaces]
+Workspace 1
+Workspace 2
+Workspace 3
+Workspace 4
+Workspace 5
+
+[Zoom]
+Zoom Full
+Zoom In
+Zoom Out
+Zoom Tracks Exclusive
+Zoom to Locators
+Zoom to Selection
+Undo Zoom
+Redo Zoom
+Zoom to Selection Horizontally
+Zoom to Event
+Zoom Tracks Full
+Zoom Tracks Minimal
+Zoom In Vertically
+Zoom Out Vertically
+Zoom Cycle Marker 1
+Zoom Cycle Marker 2
+Zoom Cycle Marker 3
+Zoom Cycle Marker 4
+Zoom Cycle Marker 5
+Zoom Cycle Marker 6
+Zoom Cycle Marker 7
+Zoom Cycle Marker 8
+Zoom Cycle Marker 9
