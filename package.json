@@ -28,5 +28,5 @@
     "acorn": "^8.14.0",
     "typescript": "^5.7.0"
   },
-  "license": "MIT"
+  "license": "GPL-3.0-or-later"
 }
